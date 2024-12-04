@@ -8,8 +8,8 @@ EAM
 ## 用法
 参考这个链接的[readme文件](https://github.com/lammps/lammps/tree/develop/tools/eam_database)
 ## 原文链接
-1.Cu,Ag,Au,Ni,Pd,Pt,Al,Pb,Fe,Mo,Ta,W,Mg,Co,Ti,Zr[参数](https://doi.org/10.1103/PhysRevB.69.144113).
-2.Cr[参数](https://doi.org/10.1103/PhysRevB.77.214108).
-3.V[参数](https://doi.org/10.1016/j.actamat.2021.117233).
-4.Nb[参数](https://doi.org/10.1088/0953-8984/25/20/209501).
-5.Hf[参数](https://doi.org/10.1021/acs.chemmater.8b03969).
+1.Cu,Ag,Au,Ni,Pd,Pt,Al,Pb,Fe,Mo,Ta,W,Mg,Co,Ti,Zr[参数](https://doi.org/10.1103/PhysRevB.69.144113).  
+2.Cr[参数](https://doi.org/10.1103/PhysRevB.77.214108).  
+3.V[参数](https://doi.org/10.1016/j.actamat.2021.117233).  
+4.Nb[参数](https://doi.org/10.1088/0953-8984/25/20/209501).  
+5.Hf[参数](https://doi.org/10.1021/acs.chemmater.8b03969).  
