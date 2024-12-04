@@ -1,0 +1,8 @@
+﻿1. This directory contains the neural network potential (NNP) files used in the manuscript, “Chemical domain structure and its formation kinetics in CrCoNi medium-entropy alloy”, Acta Materialia, 240 (2022): 118314, by Jun-Ping Du, Peijun Yu, Shuhei Shinzato, Fanshun Meng, Yuji Sato, Yangen Li, Yiwen Fan and Shigenobu Ogata.
+
+
+2. “nnp-version2.pdf”  contains the details of the construction of the NNP for CrCoNi.
+“input.nn”, “scaling.data”, “weights.024.data”, “weights.027.data” and “weights.028.data” are the potential files that can be used with LAMMPS and the NNP interface in the n2p2 code(https://compphysvienna.github.io/n2p2/). The cflength and cfenergy keywords need to be set to 1.0. 
+e.g.
+pair_style nnp dir  /home/jpdu/CrCoNi/imr_15-15-1/  showew no showewsum 1000                  resetew yes maxew 10000  cflength 1.0  cfenergy 1.0
+pair_coeff * * 6.001

@@ -1,0 +1,30 @@
+[{"checksums" {"CMakeLists.txt" "f87d5229517ee1f80fbeccd2fcfe718d39e04c74"
+               "LICENSE" "6f0cf67361b36d7972bb3f798c3c3e8d8dd37ff0"
+               "NbMoTaW_Li_Arxiv2019.snapcoeff" "41770c47fc24b02b5074a9c008eef29cc60a485b"
+               "NbMoTaW_Li_Arxiv2019.snapparam" "88a4ed5bd337308b20730f524be19b3cd4cf2e64"
+               "kimspec.edn" "0569e26a17f367b24fdb89e1b42094c7480ee4fb"}
+  "comments" "Add 'recordprimary' to source-citations"
+  "event-type" "metadata-update"
+  "extended-id" "SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000"
+  "timestamp" "2020-09-26 17:19:09"
+  "user-id" "4d62befd-21c4-42b8-a472-86132e6591f3"}
+ {"checksums" {"CMakeLists.txt" "f87d5229517ee1f80fbeccd2fcfe718d39e04c74"
+               "LICENSE" "6f0cf67361b36d7972bb3f798c3c3e8d8dd37ff0"
+               "NbMoTaW_Li_Arxiv2019.snapcoeff" "41770c47fc24b02b5074a9c008eef29cc60a485b"
+               "NbMoTaW_Li_Arxiv2019.snapparam" "88a4ed5bd337308b20730f524be19b3cd4cf2e64"
+               "kimspec.edn" "b621f410273474628a6fff70d10533dbcaf6c4d7"}
+  "comments" "Change top-level 'author' key to 'creator'"
+  "event-type" "metadata-update"
+  "extended-id" "SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000"
+  "timestamp" "2020-09-26 15:17:46"
+  "user-id" "4d62befd-21c4-42b8-a472-86132e6591f3"}
+ {"checksums" {"CMakeLists.txt" "f87d5229517ee1f80fbeccd2fcfe718d39e04c74"
+               "LICENSE" "6f0cf67361b36d7972bb3f798c3c3e8d8dd37ff0"
+               "NbMoTaW_Li_Arxiv2019.snapcoeff" "41770c47fc24b02b5074a9c008eef29cc60a485b"
+               "NbMoTaW_Li_Arxiv2019.snapparam" "88a4ed5bd337308b20730f524be19b3cd4cf2e64"
+               "kimspec.edn" "8532f4189abd596b2067f40354e69f70ce5c4b87"}
+  "comments" ""
+  "event-type" "initial-creation"
+  "extended-id" "SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000"
+  "timestamp" "2020-01-07 08:56:00"
+  "user-id" "e5131db4-a5f4-401b-b7cd-b0df1dbbc1af"}]

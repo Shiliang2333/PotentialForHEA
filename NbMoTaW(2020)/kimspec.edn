@@ -1,0 +1,27 @@
+{"creator" "Xiangguo Li"
+ "content-other-locations" "https://arxiv.org/abs/1912.01789"
+ "contributor-id" "e5131db4-a5f4-401b-b7cd-b0df1dbbc1af"
+ "description" "A spectral neighbor analysis potential for Nb-Mo-Ta-W chemistries. The potential is trained against diverse and large materials data, including undistorted ground state structures for Nb, Mo, Ta, W; distorted structures constructed by applying different strains to a bulk supercell; surface structures of elemental structures; solid solution random binary structures; special quasi-random structures for ternary and quaternary systems; ab-initio molecular dynamics (AIMD) simulated random structures at different temperatures for elementary bulk and special quasi-random structures. The potential gives accurate predictions of structural energies, forces, elasticity, lattice parameters, free energies, melting point, surface energies, generalized stacking fault energies, dislocation core structures, critical resolved shear stress of screw and edge dislocations. It can also successfully predict the short-range order and segregation effects in the multi-principal element NbMoTaW alloy."
+ "disclaimer" "This potential is designed for Nb-Mo-Ta-W chemistries, including the elementary, binary, ternary and quaternary systems.  The potential was trained using LAMMPS version 17Nov2016. Newer LAMMPS may see energy differences, but the relative values should remain to be the same."
+ "doi" "10.25950/c34c3362"
+ "domain" "openkim.org"
+ "executables" []
+ "extended-id" "SNAP_LiChenZheng_2019_NbTaWMo__MO_560387080449_000"
+ "kim-api-version" "2.0"
+ "maintainer-id" "e5131db4-a5f4-401b-b7cd-b0df1dbbc1af"
+ "model-driver" "SNAP__MD_536750310735_000"
+ "potential-type" "snap"
+ "publication-year" "2020"
+ "source-citations" [{"title" "Complex strengthening mechanisms in the {{NbMoTaW}} multi-principal element alloy"
+                      "author" "Li, Xiang-Guo and Chen, Chi and Zheng, Hui and Zuo, Yunxing and Ong, Shyue Ping"
+                      "journal" "npj Computational Materials"
+                      "year" "2020"
+                      "doi" "10.1038/s41524-020-0339-0"
+                      "issue" "1"
+                      "volume" "6"
+                      "recordkey" "MO_560387080449_000a"
+                      "recordprimary" "recordprimary"
+                      "recordtype" "article"
+                      "issn" "2057-3960"}]
+ "species" ["Nb" "Ta" "W" "Mo"]
+ "title" "A spectral neighbor analysis potential for Nb-Mo-Ta-W developed by Xiangguo Li (2019) v000"}

@@ -1,0 +1,5 @@
+﻿This directory contains the neural network potential (NNP) files used in the manuscript, “Theory of History-Dependent Multi-Layer Generalized Stacking Fault Energy: A Modeling of the Micro-Substructure Evolution Kinetics in Chemically Ordered Medium-Entropy Alloys”, by Peijun Yu, Jun-Ping Du, Shuhei Shinzato, Fanshun Meng and Shigenobu Ogata. Acta Materialia, 224 (2021): 117504.
+
+
+1. “nnp-version1.pdf”  contains the details of the construction of the NNP for CrCoNi.
+2. “input.nn”, “scaling.data”, “weights.024.data”, “weights.027.data” and “weights.028.data” are the potential files that can be used with LAMMPS and the NNP interface in the n2p2 code (https://compphysvienna.github.io/n2p2/). The cflength and cfenergy keywords need to be set to 1.0.
