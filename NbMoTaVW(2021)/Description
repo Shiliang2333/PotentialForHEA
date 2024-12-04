@@ -1,0 +1,42 @@
+----------------------------------------------------------------------
+2021-02-18
+Jesper Byggmästar, University of Helsinki
+jesper.byggmastar@helsinki.fi
+----------------------------------------------------------------------
+
+File descriptions:
+
+Mo-Nb-Ta-V-W.tabgap     - tabGAP potential file
+pair_tabgap.cpp         - tabGAP lammps pair_style
+pair_tabgap.h
+db_HEA_reduced.xyz      - VASP training structures and data
+
+----------------------------------------------------------------------
+
+How to compile lammps with tabGAP:
+    - download and put pair_tabgap.cpp and pair_tabgap.h in your lammps/src folder.
+    - compile lammps normally.
+    - (tested with LAMMPS 18 Sep 2020 -- LAMMPS 10 Feb 2021)
+
+----------------------------------------------------------------------
+
+How to run lammps with the Mo-Nb-Ta-V-W tabGAP:
+    - download the potential file Mo-Nb-Ta-V-W.tabgap
+    - with all five elements, the relevant lammps input file lines are then:
+
+mass            1 95.94
+mass            2 92.9064
+mass            3 180.9479
+mass            4 50.9415
+mass            5 183.84
+
+pair_style      tabgap
+pair_coeff      * * /path/to/Mo-Nb-Ta-V-W.tabgap Mo Nb Ta V W yes yes
+
+----------------------------------------------------------------------
+
+The original GAP (before tabulating it into a tabGAP) is trained using the
+training data "db_HEA_reduced.xyz" with QUIP+GAP (https://github.com/libAtoms/QUIP)
+with the following command and input parameters:
+
+gap_fit at_file=db_HEA_reduced.xyz core_param_file=pairpot.xml core_ip_args={IP Glue} sparse_jitter=1e-8 do_copy_at_file=False gp_file=gp_HEA.xml rnd_seed=999 default_sigma={0.002 0.1 0.5 0.0} config_type_sigma={isolated_atom:0.0001:0.04:0.01:0.0:liquid:0.01:0.5:2.0:0.0:liquid_composition:0.01:0.5:2.0:0.0:liquid_hea:0.01:0.5:2.0:0.0:surf_liquid:0.01:0.4:0.2:0.0:dimer:0.1:1.0:1.0:0.0:short_range:0.05:0.8:0.8:0.0:hea_short_range:0.05:0.8:2.0:0.0:hea_surface:0.01:0.4:1.0:0.0} gap={distance_2b cutoff=5.0 cutoff_transition_width=1.0 covariance_type=ard_se delta=10.0 theta_uniform=1.0 sparse_method=uniform n_sparse=20 print_sparse_index=sparse_indices_2b.out add_species=T : angle_3b cutoff=5.0 cutoff_transition_width=1.0 n_sparse=300 covariance_type=ard_se delta=1.0 theta_uniform=1.0 sparse_method=uniform print_sparse_index=sparse_indices_3b.out add_species=T}

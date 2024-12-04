@@ -1,0 +1,5 @@
+This folder contains training data, testing data, GAP input, and
+tabGAP potential files for Mo-Nb-Ta-V-W alloys (and some separate
+data for Mo-W and Mo-W-Ta).
+
+See separate README files in each folder for more details.

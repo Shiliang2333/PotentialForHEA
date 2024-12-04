@@ -1,0 +1,35 @@
+Mo-Nb-Ta-V-W.tabgap and Mo-Nb-Ta-V-W.eam.fs are the potential files needed
+to run simulations for alloys.
+
+First, compile lammps with the tabgap pair_style from https://gitlab.com/jezper/tabgap
+
+
+Below are the relevant lammps input lines, assuming all 5 elements in the simulation.
+(place the potential files somewhere convenient and replace /path/to/...)
+-------------------------
+mass 1 95.95
+mass 2 92.90637
+mass 3 180.94788
+mass 4 50.9415
+mass 5 183.84
+pair_style hybrid/overlay eam/fs tabgap
+pair_coeff * * eam/fs /path/to/Mo-Nb-Ta-V-W.eam.fs Mo Nb Ta V W
+pair_coeff * * tabgap /path/to/Mo-Nb-Ta-V-W.tabgap Mo Nb Ta V W no yes
+-------------------------
+
+
+The pure-* folders contain potential files tabulated only for the pure metals,
+which can only be used when simulating the pure metals. These potentials are
+exactly the same as the pure-metal parts of the full Mo-Nb-Ta-V-W potential files.
+The only reason for including them here is that the Mo-Nb-Ta-V-W.tabgap file is quite
+big and takes some seconds for lammps to read in, so that when doing very short
+static or MD simulations for pure metals, it is a lot faster to use the much
+smaller potential files from the pure-* folders.
+NOTE, however, that if you are only interested in the pure metals, I do not recommend
+using this potential! Only if you want to e.g. directly compare the pure metal to some
+alloy. Because if you only care about one of the pure metals, although the potential
+should give OK results, it's better to use a potential that is specifically fitted for
+the metal and has been well-tested (this potential is mostly tested for alloys).
+
+
+/ Jesper Byggmästar, 2022-02-15

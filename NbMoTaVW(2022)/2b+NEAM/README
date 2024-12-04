@@ -1,0 +1,11 @@
+Lammps input lines, assuming all 5 elements in simulation:
+
+mass 1 95.95
+mass 2 92.90637
+mass 3 180.94788
+mass 4 50.9415
+mass 5 183.84
+pair_style  hybrid/overlay eam/fs eam/fs eam/fs
+pair_coeff  * * eam/fs 1 Mo-Nb-Ta-V-W-1.eam.fs Mo Nb Ta V W
+pair_coeff  * * eam/fs 2 Mo-Nb-Ta-V-W-2.eam.fs Mo Nb Ta V W
+pair_coeff  * * eam/fs 3 Mo-Nb-Ta-V-W-3.eam.fs Mo Nb Ta V W
