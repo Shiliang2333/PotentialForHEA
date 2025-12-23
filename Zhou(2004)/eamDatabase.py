@@ -10,8 +10,7 @@ written by: Germain Clavier g.m.g.c.clavier@tue.nl
 This file contains atom attributes for the EAM model and alloy combination. The
 original file is EAM_code. It is designed to be used with create_eam.py script.
 To add new contribution, just add new AtType instances.
-Supported element:Cu,Ag,Au,Ni,Pd,Pt,Al,Pb,Fe,Mo,Ta,W,Mg,Co,Ti,Zr,Cr,
-                  V,Nb,Hf
+Supported element:Cu,Ag,Au,Ni,Pd,Pt,Al,Pb,Fe,Mo,Ta,W,Mg,Co,Ti,Zr,Cr,V,Nb,Hf
 """
 
 import math
@@ -318,7 +317,7 @@ Database["Al"] = AtType(
     23.195740,
     6.613165,
     3.527021,
-    0.134873,
+    0.314873,
     0.365551,
     0.379846,
     0.759692,
@@ -658,7 +657,7 @@ Database["V"] = AtType(
     -2.830487,
     -3.380243,
     0,
-    1.242772,
+    1.242722,
     0.134111,
     0.635059,
     -3.365898,
